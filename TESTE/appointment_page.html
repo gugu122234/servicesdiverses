@@ -13,7 +13,7 @@
   <!-- Basic Page Needs
   ================================================== -->
 
-  <title>Orçamento Fácil e Rápido</title>
+  <title>Construction</title>
 
   <meta name = "format-detection" content = "telephone=no" />
   <meta charset="utf-8">
@@ -148,52 +148,43 @@
 
             <!-- - - - - - - - - - - - - - Navigation - - - - - - - - - - - - - - - - -->
 
-            <!-- - - - - - - - - - - - - - Navigation - - - - - - - - - - - - - - - - -->
-
             <div class="nav_item">
               
               <nav id="main_navigation" class="main_navigation">
                 <ul id="menu" class="clearfix">
-                  <li class="current"><a href="index.html">Início</a></li>
-                  <li class="drop"><a href="#">Páginas</a>
+                  <li><a href="index.html">Home</a></li>
+                  <li class="drop current"><a href="#">Pages</a>
 
                     <!--sub menu-->
                     <div class="sub_menu_wrap clearfix">
                       <ul>
-                        <li><a href="about_us.html">Quem somos</a></li>
-                        <li class="sub"><a href="#">Equipe</a>
+                        <li><a href="about_us.html">About Us</a></li>
+                        <li class="sub"><a href="team.html">Team</a>
                           
                           <!--sub menu-->
                           <div class="sub_menu_wrap sub_menu_inner type_2 clearfix">
                             <ul>
-                              <li><a href="team.html">Colaboradores</a>
-                              <li><a href="single_member.html">Página de Perfil do Membro</a></li>
+                              <li><a href="single_member.html">Single Member Page</a></li>
                             </ul>
                           </div>
 
                         </li>
-                        <li class="sub"><a href="#">Serviços</a>
+                        <li class="sub"><a href="#">Services</a>
 
                           <!--sub menu-->
                           <div class="sub_menu_wrap sub_menu_inner type_2 clearfix">
                             <ul>
-                              <li ><a href="services_v1.html">Construção e Reparos</a>
-                              <li><a href="services_v2.html">Elétrica</a></li>
-                              <li><a href="services_v3.html">Hidráulica</a></li>
-                              <li><a href="services_v4.html">Pintura e Acabamento</a></li>
-                              <li><a href="services_v5.html">Jardinagem e Paisagismo</a></li>
-                              <li><a href="services_v6.html">Assistência e Manutenção Doméstica</a></li>
-                              <li><a href="services_v7.html">Transporte e Mudanças</a></li>
-                              <li><a href="services_v8.html">Instalações Diversas</a></li>
+                              <li><a href="services_v1.html">Service v1</a></li>
+                              <li><a href="services_v2.html">Service v2</a></li>
                             </ul>
                           </div>
 
                         </li>
                         <li><a href="careers.html">Carrers</a></li>
                         <li><a href="testimonials.html">Testimonials</a></li>
-                        <li><a href="appointment_page.html">Appointment Page</a></li>
-                        <li><a href="#">cadastro profissional</a></li>
-                        <li><a href="#">cadastro cliente</a></li>
+                        <li class="current"><a href="appointment_page.html">Appointment Page</a></li>
+                        <li><a href="page_404.html">404 Page</a></li>
+                        <li><a href="pricing.html">Pricing</a></li>
                         <li><a href="coming_soon.html">Coming Soon Page</a></li>
                       </ul>
                     </div>
@@ -248,15 +239,27 @@
                     </div>
 
                   </li>
+                  <li class="drop"><a href="#">Shop</a>
+                    
+                    <!--sub menu-->
+                    <div class="sub_menu_wrap clearfix">
+                      <ul>
+                        <li><a href="shop_front_page.html">Front page</a></li>
+                        <li><a href="shop_category_page.html">Category Page</a></li>
+                        <li><a href="shop_product_page.html">Product Page</a></li>
+                        <li><a href="shop_product_page_sidebar.html">Product Page with Sidebar</a></li>
+                        <li><a href="shop_shopping_cart.html">Shopping Cart</a></li>
+                        <li><a href="shop_order_list.html">Orders List</a></li>
+                        <li><a href="shop_order_info.html">Order Information</a></li>
+                      </ul>
+                    </div>
 
+                  </li>
+                  <li><a href="contact.html">Contact</a></li>
+                </ul>
+              </nav>
 
-          </div>
-
-        </div>
-
-      </div>
-    
-    </header>
+            </div>
 
             <!-- - - - - - - - - - - - - end Navigation - - - - - - - - - - - - - - - -->
 
@@ -1080,54 +1083,7 @@
   <script src="plugins/twitter/jquery.tweet.js"></script>
   <script src="js/plugins.js"></script>
   <script src="js/script.js"></script>
-  <script>
-    document.addEventListener('DOMContentLoaded', function() {
-      const categoriaTitle = document.querySelectorAll('.custom_select')[0].querySelector('.select_title');
-      const categoriaList = document.querySelectorAll('.custom_select')[0].querySelector('.select_list');
-      const servicoTitle = document.querySelectorAll('.custom_select')[1].querySelector('.select_title');
-      const servicoList = document.querySelectorAll('.custom_select')[1].querySelector('.select_list');
-    
-      const servicosPorCategoria = {
-        "Construção e Reparos": ["Construção de paredes", "Instalação de pisos", "Reformas gerais"],
-        "Elétrica": ["Instalação de tomadas", "Troca de disjuntor", "Manutenção elétrica"],
-        "Hidráulica": ["Desentupimento", "Troca de torneira", "Reparo de vazamentos"],
-        "Pintura e Acabamento": ["Pintura de paredes", "Texturização", "Restauração de pintura"],
-        "Jardinagem e Paisagismo": ["Corte de grama", "Plantio de flores", "Manutenção de jardins"],
-        "Assistência e Manutenção Doméstica": ["Montagem de móveis", "Pequenos reparos", "Instalação de prateleiras"],
-        "Transporte e Mudanças": ["Mudança residencial", "Transporte de móveis", "Frete pequeno"],
-        "Instalações Diversas": ["Instalação de TV", "Instalação de cortinas", "Instalação de suporte de parede"]
-      };
-    
-      // Escuta o clique na lista de categorias
-      categoriaList.addEventListener('click', function(e) {
-        if (e.target && e.target.nodeName === "LI") {
-          const categoriaSelecionada = e.target.innerText.trim();
-          categoriaTitle.innerText = categoriaSelecionada; // muda o texto da caixa principal
-    
-          // Atualiza a lista de serviços
-          const servicos = servicosPorCategoria[categoriaSelecionada] || [];
-          servicoList.innerHTML = ''; // limpa o antigo
-          servicoTitle.innerText = 'Selecione o serviço'; // volta o título inicial
-    
-          servicos.forEach(function(servico) {
-            const li = document.createElement('li');
-            li.textContent = servico;
-            servicoList.appendChild(li);
-          });
-        }
-      });
-    
-      // Quando selecionar um serviço, atualiza o título também
-      servicoList.addEventListener('click', function(e) {
-        if (e.target && e.target.nodeName === "LI") {
-          const servicoSelecionado = e.target.innerText.trim();
-          servicoTitle.innerText = servicoSelecionado;
-        }
-      });
-    });
-    </script>
-    
-    
-    
+  
+  
 </body>
 </html>
